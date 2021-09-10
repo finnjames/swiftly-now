@@ -7,9 +7,12 @@ Add the following to `settings.json`:
 ```json
 // Swiftly, Now!
 "editor.fontSize": 13,
+"editor.fontWeight": 500,
 "editor.fontFamily": "SF Mono, Menlo, Monaco, monospace",
 "terminal.integrated.fontSize": 13,
 "terminal.integrated.lineHeight": 1.2,
+"workbench.productIconTheme": "sf-symbol-icons",
+"workbench.iconTheme": null,
 "customizeUI.stylesheet": {
     ".composite.title": "background: transparent !important",
     ".monaco-workbench .activitybar > .content": "justify-content: center !important",
@@ -22,16 +25,10 @@ Add the following to `settings.json`:
 "customizeUI.titleBar": "inline",
 "customizeUI.activityBar": "bottom",
 "workbench.statusBar.visible": false,
-"workbench.iconTheme": null,
-"workbench.productIconTheme": "sf-symbol-icons",
-"vscode_vibrancy.opacity": 0.5,
-"editor.fontWeight": 500,
+"vscode_vibrancy.theme": "Dark (Only Subbar)",
+"vscode_vibrancy.opacity": 0,
 "extensions.ignoreRecommendations": true,
 "terminal.integrated.gpuAcceleration": "off",
 "workbench.colorTheme": "Swiftly, Now! Dark",
-// "window.autoDetectColorScheme": false,
-// "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Big Sur Xcode",
-// "workbench.preferredLightColorTheme": "MacOS Modern Light - Big Sur Xcode Default",
-"vscode_vibrancy.theme": "Dark (Only Subbar)",
-"vscode_vibrancy.type": "sidebar",
+"security.workspace.trust.untrustedFiles": "open",
 ```
