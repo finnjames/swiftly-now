@@ -1,8 +1,9 @@
 {
 	"name": "swiftly-now",
 	"displayName": "Swiftly, Now!",
-	"description": "Make VSCode match Big Sur",
+	"description": "Make VSCode match macOS",
 	"version": "0.0.1",
+	"publisher": "radiolevity",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -14,6 +15,13 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"themes": [
+			{
+				"label": "Swiftly, Now! Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/swiftly-now-dark.json"
+			}
+		],
 		"commands": [
 			{
 				"command": "swiftly-now.helloWorld",
@@ -21,6 +29,9 @@
 			}
 		]
 	},
+	"extensionDependencies": [
+		"iocave.monkey-patch"
+	],
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
